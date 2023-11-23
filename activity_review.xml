@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvReview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191818"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="clip_horizontal"
+        android:gravity="center_horizontal"
+        android:text="ATV Review"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/slider_2" />
+
+    <TextView
+        android:id="@+id/tvReviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Disatisfied"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/rbStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="#FFEB3B"
+            android:hapticFeedbackEnabled="false"
+            android:numStars="5"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#FFEB3B" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/reviewText"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint=" Enter Review"
+        android:inputType="textMultiLine"
+        android:textColorHint="#DDC4C4" />
+
+    <Button
+        android:id="@+id/sendReviewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/white"
+        android:text="Send Review" />
+
+    <Button
+        android:id="@+id/backReviewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:text="Back" />
+</LinearLayout>

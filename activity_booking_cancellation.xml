@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".BookingCancellation">
+
+    <TextView
+        android:id="@+id/dateCancelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="12-12-2022"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeCancelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Time: 12:00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateCancelTextView" />
+
+    <TextView
+        android:id="@+id/amountCancelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Amount: RM 340"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/timeCancelTextView"
+        app:layout_constraintStart_toStartOf="@+id/timeCancelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/timeCancelTextView" />
+
+    <TextView
+        android:id="@+id/noOfPaxCancelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="No. of pax: 4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/amountCancelTextView"
+        app:layout_constraintStart_toStartOf="@+id/amountCancelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/amountCancelTextView" />
+
+    <TextView
+        android:id="@+id/statusCancelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="120dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Status: CANCELLED"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noOfPaxCancelTextView" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="230dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Reason"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusCancelTextView" />
+
+    <TextView
+        android:id="@+id/reasonCancelTextView"
+        android:layout_width="371dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="fasdflkajsdfa sdfa;sld falskdjfha sdlkjfhas dfd\n asd\n as;dlkfjasd;l kfjasd;fjas d;kasd fdsf "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+    <Button
+        android:id="@+id/cancelBookingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Cancel Booking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reasonCancelTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
